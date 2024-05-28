@@ -1,0 +1,31 @@
+# ***let* and *const* Exercise**
+
+In this exercise, you’ll refactor some ES5 code into ES2015.
+
+## **ES5 Global Constants**
+
+```jsx
+var PI = 3.14;
+PI = 42; // stop me from doing this!
+```
+
+## **ES2015 Global Constants**
+
+```jsx
+/* Write an ES2015 Version */
+let PI = 3.14;
+PI = 42;
+```
+
+## **Quiz**
+
+- What is the difference between ***var*** and ***let***?
+  var and let are very similar, but there a few key differences. One major difference is that var writes the variable onto the window script, let does not. Let stays with in parameters, while var does not. Example would be a for loop. for(var i = 0;) would allow you to
+  access i outside of the function parameters. for(let i = 0;) i does not exist outside of that for loop. Var also 'hoists' variables, which means any variable declared with var will return undefined until the code script is ran. Both can be reassigned, but let cannot be
+  redeclared.
+- What is the difference between **var** and ***const***?
+  const cannot not be reassigned or redeclared. const cannot be accessed outside of the function it is created. 
+- What is the difference between **let** and **const**?
+  const cannot not be reassigned or redeclared.
+- What is hoisting?
+  answered in answer 1. 
