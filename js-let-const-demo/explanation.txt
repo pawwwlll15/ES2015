@@ -1,0 +1,51 @@
+ES2015:
+
+let / const vs var:
+
+let and const replaced var in JS back in 2015. var was generic for all variables.
+let allows variables to be altered. while const cannot be altered. however, 
+you can change the content with an array/object that is delcared a const
+
+arrowFunctions:
+
+arrow functions help shorthand the 'function' right out.
+
+instead of:
+
+const func = function(x){
+
+}
+
+use:
+
+const func = x => {
+
+}
+
+
+rest/spread:
+
+without the rest/spread operators, you would have to splice an array-like-object and
+assign the values into a new array to use operators like map/filter.
+
+instead you can automatically turn the array-lik-object into an array by
+putting (...nameOfArg) within the function parameter. ex:
+
+function displayArgs(...restOfArgs){
+    return restOfArgs.length;
+}
+
+this eliminates the need to manually create and array.
+
+while using rest operator: 
+ function filterOutOdds(...arguments) {
+    return arguments.filter((n) => n % 2 ===0);
+};
+
+*NOTICE WE DO NOT USE {} WHEN USING A REST OPERATOR. This reduces your code by multiple
+lines. old way: 
+return arguments.filter(function(n){
+    return n % 2 ==== 0;
+});
+
+
