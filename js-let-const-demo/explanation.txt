@@ -49,3 +49,22 @@ return arguments.filter(function(n){
 });
 
 
+let userData = {
+   username: 'smith',
+   id: 12345,
+   password: 'fiddlesticks',
+   firstName: 'Angela',
+   lastName: 'Smith',
+   age: 'guess',
+   isLegit: undefined
+ };
+
+/*
+  declare variables: username, firstName, lastName, id
+   values taken from the keys of the same name in userData
+ */
+ let { username, firstName, lastName, id } = userData;   *******THIS ASSIGNS THE VALUES OF KEYS THAT MATCH CREATED VARIABLES TO CREATED VARIABLES******
+
+ console.log(username);  // smith
+ console.log(id);        // 12345
+
